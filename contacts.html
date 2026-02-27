@@ -1,0 +1,311 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Global Valves and Bearings Solutions</title>
+  <meta name="description" content="Contact our technical engineering team for inquiries about heavy machinery, conveyor systems, and industrial parts.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+    html {
+      scroll-behavior: auto !important;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, nav, header, button, a, p, span, div, label, input, select, textarea {
+      font-family: 'Merriweather', serif !important;
+    }
+
+    body {
+      background: #334432;
+      color: #ECEEF7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .link-underline {
+      position: relative;
+    }
+    .link-underline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+    .link-underline:hover::after {
+      width: 100%;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-reveal {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .reveal-delay-1 { animation-delay: 0.2s; }
+    .reveal-delay-2 { animation-delay: 0.4s; }
+
+    input, select, textarea {
+      background-color: transparent !important;
+      border-bottom: 1px solid rgba(51, 68, 50, 0.2) !important;
+      color: #334432 !important;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none !important;
+      border-bottom: 1px solid #334432 !important;
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="fixed top-0 left-0 w-full h-20 z-50 bg-[#ECEEF7] border-b border-[#334432]/10 transition-all duration-300" id="main-nav" role="banner">
+    <div class="container mx-auto h-full px-6 flex items-center justify-between" id="gama-mm4wn5qt-0">
+      <div class="flex-shrink-0" id="gama-mm4wn5qt-1">
+        <a href="/" class="group block transition-transform duration-300 hover:scale-105" aria-label="Global Valves and Bearings Solutions Home" id="gama-mm4wn5qt-2">
+          <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1771584838/bearings-logo_zqwh2x.png" alt="Global Valves and Bearings Solutions Logo" class="h-12 w-auto object-contain" id="gama-mm4wn5qt-3">
+        </a>
+      </div>
+      
+      <div class="flex items-center gap-6" id="gama-mm4wn5qt-4">
+        <nav class="hidden md:flex items-center space-x-10" aria-label="Main Navigation" id="gama-mm4wn5qt-5">
+          <a href="about.html" class="link-underline text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4wn5qt-6">About</a>
+          <a href="products.html" class="link-underline text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4wn5qt-7">Products</a>
+          <a href="services.html" class="link-underline text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4wn5qt-8">Services</a>
+          <div class="flex items-center" id="gama-mm4wn5qt-9">
+            <a href="contact.html" class="text-[10px] md:text-xs font-black uppercase tracking-widest text-white bg-[#334432] px-4 py-2 rounded-full transition-all duration-300 hover:opacity-90 inline-block" aria-current="page" id="gama-mm4wn5qt-10">Contact</a>
+          </div>
+        </nav>
+
+        <button id="mobile-menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] relative" aria-label="Toggle Navigation Menu">
+          <span class="block w-6 h-0.5 bg-[#334432] transition-transform duration-300" id="burger-top"></span>
+          <span class="block w-6 h-0.5 bg-[#334432] transition-opacity duration-300" id="burger-mid"></span>
+          <span class="block w-6 h-0.5 bg-[#334432] transition-transform duration-300" id="burger-bot"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-[#ECEEF7] z-50 transform translate-y-full transition-all duration-500 ease-in-out md:hidden opacity-0 pointer-events-none">
+      <div class="flex flex-col items-center justify-center h-full space-y-12 px-8" id="gama-mm4wn5qt-11">
+        <nav class="flex flex-col items-center space-y-10" id="gama-mm4wn5qt-12">
+          <a href="about.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all" id="gama-mm4wn5qt-13">About</a>
+          <a href="products.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all" id="gama-mm4wn5qt-14">Products</a>
+          <a href="services.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all" id="gama-mm4wn5qt-15">Services</a>
+          <a href="contact.html" class="mobile-link text-lg font-black uppercase tracking-[0.2em] text-white bg-[#334432] px-10 py-4 rounded-full shadow-2xl inline-block" id="gama-mm4wn5qt-16">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20 min-h-screen" id="gama-mm4wn5qt-17">
+    
+    <!-- Hero -->
+    <section class="relative py-20 md:py-32 flex items-center bg-[#334432] overflow-hidden" id="gama-mm4wn5qt-18">
+      <div class="container mx-auto px-6 relative z-10" id="gama-mm4wn5qt-19">
+        <div class="max-w-4xl" id="gama-mm4wn5qt-20">
+          <h1 class="text-4xl md:text-7xl font-light mb-6 leading-tight tracking-tight text-[#ECEEF7] animate-reveal opacity-0" id="gama-mm4wn5qt-21">
+            Contact <span class="italic font-normal" id="gama-mm4wn5qt-22">Us</span>
+          </h1>
+          <p class="text-base md:text-xl text-[#ECEEF7]/80 max-w-2xl leading-relaxed font-light animate-reveal opacity-0 reveal-delay-1" id="gama-mm4wn5qt-23">Whether you need a quote on heavy machinery, technical support for a conveyor system, or specialized product sourcing, our team is ready to help keep your operations moving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-24 bg-[#ECEEF7] text-[#334432]" id="gama-mm4wn5qt-24">
+      <div class="container mx-auto px-6" id="gama-mm4wn5qt-25">
+        <div class="grid lg:grid-cols-1 gap-16 gama-selected-locked" id="gama-mm4wn5qt-26">
+          
+          <!-- Contact Information -->
+          <div class="space-y-12 animate-reveal opacity-0" id="gama-mm4wn5qt-27" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <div class="border-l-4 border-[#334432] pl-8" id="gama-mm4wn5qt-28">
+              <h2 class="text-3xl font-light mb-8" id="gama-mm4wn5qt-29">Contact Information</h2>
+              <div class="space-y-6" id="gama-mm4wn5qt-30">
+                <div id="gama-mm4wn5qt-31" class="">
+                  <h4 class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-1" id="gama-mm4wn5qt-32">Email</h4>
+                  <p class="text-lg font-bold" id="gama-mm4wn5qt-33"><a href="mailto:sales@globalvalvesandbearings.com" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-34" contenteditable="false">sales@gvbs.co.za</a></p>
+                </div>
+                <div id="gama-mm4wn5qt-35" class="">
+                  <h4 class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-1" id="gama-mm4wn5qt-36">Phone</h4>
+                  <p class="text-lg font-bold" id="gama-mm4wn5qt-37">+27 (0) XX XXX XXXX</p>
+                </div>
+                <div id="gama-mm4wn5qt-38" class="">
+                  <h4 class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-1" id="gama-mm4wn5qt-39">Global Headquarters</h4>
+                  <p class="text-lg" id="gama-mm4wn5qt-40">[Insert Physical Address / City, South Africa]</p>
+                </div>
+                <div id="gama-mm4wn5qt-41" class="">
+                  <h4 class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-1" id="gama-mm4wn5qt-42">Business Hours</h4>
+                  <p class="text-lg" id="gama-mm4wn5qt-43">Monday – Friday, 8:00 AM – 5:00 PM (SAST)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl animate-reveal opacity-0 reveal-delay-1" id="gama-mm4wn5qt-44" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <h2 class="text-2xl font-light mb-4" id="gama-mm4wn5qt-45">Send Us a Message</h2>
+            <p class="text-sm text-[#334432]/70 mb-10" id="gama-mm4wn5qt-46">
+              Use the form below to request a quote or ask a technical question. A member of our engineering or sales team will respond within 24 hours.
+            </p>
+
+            <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10" id="gama-mm4wn5qt-47">
+              <div class="flex flex-col" id="gama-mm4wn5qt-48">
+                <label for="full-name" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-49">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required="" class="py-2 px-0 transition-all">
+              </div>
+              
+              <div class="flex flex-col" id="gama-mm4wn5qt-50">
+                <label for="company-name" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-51">Company Name</label>
+                <input type="text" id="company-name" name="company-name" required="" class="py-2 px-0 transition-all">
+              </div>
+
+              <div class="flex flex-col" id="gama-mm4wn5qt-52">
+                <label for="email" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-53">Email Address</label>
+                <input type="email" id="email" name="email" required="" class="py-2 px-0 transition-all">
+              </div>
+
+              <div class="flex flex-col" id="gama-mm4wn5qt-54">
+                <label for="phone" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-55">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="py-2 px-0 transition-all">
+              </div>
+
+              <div class="flex flex-col md:col-span-2" id="gama-mm4wn5qt-56">
+                <label for="inquiry-type" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-57">What are you inquiring about?</label>
+                <select id="inquiry-type" name="inquiry-type" class="py-2 px-0 transition-all cursor-pointer">
+                  <option value="" disabled="" selected="" id="gama-mm4wn5qt-58">Select one</option>
+                  <option value="valves-bearings" id="gama-mm4wn5qt-59">Valves &amp; Bearings</option>
+                  <option value="conveyor-belts" id="gama-mm4wn5qt-60">Conveyor Belts &amp; Components</option>
+                  <option value="heavy-machinery" id="gama-mm4wn5qt-61">Crushers &amp; Heavy Machinery</option>
+                  <option value="custom-engineering" id="gama-mm4wn5qt-62">Custom Engineering &amp; Plant Design</option>
+                  <option value="spare-parts" id="gama-mm4wn5qt-63">Spare Parts &amp; Wear Materials</option>
+                  <option value="general" id="gama-mm4wn5qt-64">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="flex flex-col md:col-span-2" id="gama-mm4wn5qt-65">
+                <label for="message" class="text-[10px] font-black uppercase tracking-widest text-[#334432]/50 mb-2" id="gama-mm4wn5qt-66">Message / Project Details</label>
+                <textarea id="message" name="message" rows="4" placeholder="Please include any relevant details such as capacity requirements, material types, or specific part numbers..." class="py-2 px-0 transition-all resize-none"></textarea>
+              </div>
+
+              <div class="md:col-span-2 pt-4" id="gama-mm4wn5qt-67">
+                <button type="submit" class="w-full bg-[#334432] text-white py-5 rounded-full font-black uppercase tracking-widest text-xs transition-all hover:scale-[1.02] shadow-xl active:scale-95" id="gama-mm4wn5qt-68">
+                  Submit Inquiry
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[#ECEEF7] text-[#334432] pt-24 pb-12 border-t border-[#334432]/10" id="gama-mm4wn5qt-69">
+    <div class="container mx-auto px-6" id="gama-mm4wn5qt-70">
+      <div class="grid md:grid-cols-12 gap-12 mb-20" id="gama-mm4wn5qt-71">
+        <div class="md:col-span-5" id="gama-mm4wn5qt-72">
+          <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1771584838/bearings-logo_zqwh2x.png" alt="Global Valves and Bearings Solutions Logo" class="h-12 w-auto mb-8 object-contain" id="gama-mm4wn5qt-73">
+          <p class="text-sm text-[#334432]/70 leading-relaxed max-w-sm font-normal" id="gama-mm4wn5qt-74">Global Valves and Bearings Solutions: Premier supplier and engineering partner for industrial mechanical components worldwide.</p>
+        </div>
+        <div class="md:col-span-3 col-span-6" id="gama-mm4wn5qt-75">
+          <h5 class="uppercase text-[10px] font-black tracking-[0.2em] text-[#334432]/40 mb-6" id="gama-mm4wn5qt-76">Solutions</h5>
+          <ul class="space-y-4 text-sm font-bold" id="gama-mm4wn5qt-77">
+            <li id="gama-mm4wn5qt-78"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-79">Conveyor Systems</a></li>
+            <li id="gama-mm4wn5qt-80"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-81">Heavy Machinery</a></li>
+            <li id="gama-mm4wn5qt-82"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-83">Valves &amp; Bearings</a></li>
+            <li id="gama-mm4wn5qt-84"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-85">Engineering Services</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3 col-span-6" id="gama-mm4wn5qt-86">
+          <h5 class="uppercase text-[10px] font-black tracking-[0.2em] text-[#334432]/40 mb-6" id="gama-mm4wn5qt-87">Company</h5>
+          <ul class="space-y-4 text-sm font-bold" id="gama-mm4wn5qt-88">
+            <li id="gama-mm4wn5qt-89"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-90">About Us</a></li>
+            <li id="gama-mm4wn5qt-91"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-92">Industries</a></li>
+            <li id="gama-mm4wn5qt-93"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-94">Logistics</a></li>
+            <li id="gama-mm4wn5qt-95"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4wn5qt-96">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#334432]/10 pt-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6" id="gama-mm4wn5qt-97">
+        <div class="text-[10px] uppercase tracking-widest text-[#334432]/40 font-black" id="gama-mm4wn5qt-98">© 2026 Global Valves and Bearings Solutions</div>
+        <div class="flex space-x-8 text-[10px] uppercase tracking-widest text-[#334432]/40 font-black" id="gama-mm4wn5qt-99">
+          <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4wn5qt-100">Privacy</a>
+          <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4wn5qt-101">Standards</a>
+          <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4wn5qt-102">Sourcing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true
+    });
+    
+    lenis.on('scroll', ScrollTrigger.update);
+    
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    
+    gsap.ticker.lagSmoothing(0);
+
+    gsap.utils.toArray('.animate-reveal').forEach((el) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 90%',
+          toggleActions: 'play none none reverse'
+        }
+      });
+    });
+
+    (function() {
+      const toggleBtn = document.getElementById('mobile-menu-toggle');
+      const overlay = document.getElementById('mobile-menu-overlay');
+      const bTop = document.getElementById('burger-top');
+      const bMid = document.getElementById('burger-mid');
+      const bBot = document.getElementById('burger-bot');
+      const links = document.querySelectorAll('.mobile-link');
+      let isOpen = false;
+
+      function toggle() {
+        isOpen = !isOpen;
+        if (isOpen) {
+          overlay.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+          overlay.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          bTop.style.transform = 'translateY(8px) rotate(45deg)';
+          bMid.style.opacity = '0';
+          bBot.style.transform = 'translateY(-8px) rotate(-45deg)';
+          document.body.style.overflow = 'hidden';
+        } else {
+          overlay.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+          overlay.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          bTop.style.transform = 'none';
+          bMid.style.opacity = '1';
+          bBot.style.transform = 'none';
+          document.body.style.overflow = '';
+        }
+      }
+
+      toggleBtn.addEventListener('click', toggle);
+      links.forEach(link => link.addEventListener('click', toggle));
+    })();
+  </script>
+</body></html>
