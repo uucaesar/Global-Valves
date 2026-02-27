@@ -1,0 +1,427 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Global Valves and Bearings Solutions</title>
+  <meta name="description" content="Comprehensive range of industrial mechanical components, heavy machinery, and engineering solutions.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+    html {
+      scroll-behavior: auto !important;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, nav, header, button, a, p, span, div {
+      font-family: 'Merriweather', serif !important;
+    }
+
+    body {
+      background: #334432;
+      color: #ECEEF7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .glass {
+      background: rgba(236, 238, 247, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-glass {
+      background: #ECEEF7;
+      backdrop-filter: blur(12px);
+    }
+
+    .link-underline {
+      position: relative;
+    }
+    .link-underline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+    .link-underline:hover::after {
+      width: 100%;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-reveal {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .reveal-delay-1 { animation-delay: 0.2s; }
+    .reveal-delay-2 { animation-delay: 0.4s; }
+    .reveal-delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="fixed top-0 left-0 w-full h-20 z-50 bg-[#ECEEF7] border-b border-[#334432]/10 transition-all duration-300 gama-selected-locked" id="main-nav" role="banner">
+    <div class="container mx-auto h-full px-6 flex items-center justify-between" id="gama-mm4ub4o1-0">
+      <div class="flex-shrink-0" id="gama-mm4ub4o1-1">
+        <a href="/" class="group block transition-transform duration-300 hover:scale-105" aria-label="Global Valves and Bearings Solutions Home" id="gama-mm4ub4o1-2">
+          <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1771584838/bearings-logo_zqwh2x.png" alt="Global Valves and Bearings Solutions Logo" class="h-12 w-auto object-contain" id="gama-mm4ub4o1-3">
+        </a>
+      </div>
+      
+      <div class="flex items-center gap-6" id="gama-mm4ub4o1-4">
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-10" aria-label="Main Navigation" id="gama-mm4ub4o1-5">
+          <a href="about.html" class="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4ub4o1-6">About</a>
+          <a href="products.html" class="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4ub4o1-7">Products</a>
+          <a href="services.html" class="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] opacity-80 transition-all duration-300 hover:opacity-100" id="gama-mm4ub4o1-8">Services</a>
+          <div class="flex items-center" id="gama-mm4ub4o1-9">
+            <a href="contact.html" class="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#334432] border border-[#334432]/20 px-4 py-2 rounded-full opacity-80 transition-all duration-300 hover:opacity-100 hover:bg-[#334432] hover:text-white inline-block" id="menu-trigger" aria-label="Go to Contact Page">Contact</a>
+          </div>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] relative" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="block w-6 h-0.5 bg-[#334432] transition-transform duration-300" id="burger-top"></span>
+          <span class="block w-6 h-0.5 bg-[#334432] transition-opacity duration-300" id="burger-mid"></span>
+          <span class="block w-6 h-0.5 bg-[#334432] transition-transform duration-300" id="burger-bot"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-[#ECEEF7] z-50 transform translate-y-full transition-all duration-500 ease-in-out md:hidden opacity-0 pointer-events-none" aria-hidden="true">
+      <div class="flex flex-col items-center justify-center h-full space-y-12 px-8" id="gama-mm4v5th2-0">
+        <nav class="flex flex-col items-center space-y-10" aria-label="Mobile Menu Navigation" id="gama-mm4v5th2-1">
+          <a href="about.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all hover:scale-110" id="gama-mm4v5th2-2">About</a>
+          <a href="products.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all hover:scale-110" id="gama-mm4v5th2-3">Products</a>
+          <a href="services.html" class="mobile-link text-xl font-black uppercase tracking-[0.3em] text-[#334432] transition-all hover:scale-110" id="gama-mm4v5th2-4">Services</a>
+          <a href="contact.html" class="mobile-link text-lg font-black uppercase tracking-[0.2em] text-white bg-[#334432] px-10 py-4 rounded-full shadow-2xl inline-block" aria-label="Contact Us" id="gama-mm4v5th2-5">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const bTop = document.getElementById('burger-top');
+        const bMid = document.getElementById('burger-mid');
+        const bBot = document.getElementById('burger-bot');
+        const links = document.querySelectorAll('.mobile-link');
+        let isOpen = false;
+
+        function toggle() {
+          isOpen = !isOpen;
+          if (isOpen) {
+            overlay.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+            overlay.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            bTop.style.transform = 'translateY(8px) rotate(45deg)';
+            bMid.style.opacity = '0';
+            bBot.style.transform = 'translateY(-8px) rotate(-45deg)';
+            document.body.style.overflow = 'hidden';
+            toggleBtn.setAttribute('aria-expanded', 'true');
+          } else {
+            overlay.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+            overlay.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            bTop.style.transform = 'none';
+            bMid.style.opacity = '1';
+            bBot.style.transform = 'none';
+            document.body.style.overflow = '';
+            toggleBtn.setAttribute('aria-expanded', 'false');
+          }
+        }
+
+        toggleBtn.addEventListener('click', toggle);
+        links.forEach(link => link.addEventListener('click', toggle));
+      })();
+    </script>
+  </header>
+
+  <div class="pt-20" id="gama-mm4ukddi-10">
+    <main class="min-h-screen" id="gama-mm4ukddi-11">
+      
+      <!-- Hero -->
+      <section class="relative py-24 md:py-32 flex items-center overflow-hidden bg-[#334432]" id="gama-mm4ukddi-12">
+        <div class="container mx-auto px-6 relative z-10" id="gama-mm4ukddi-13">
+          <div class="max-w-4xl opacity-0 animate-reveal" id="gama-mm4ukddi-14">
+            
+            <h1 class="text-4xl md:text-7xl font-light mb-6 leading-tight tracking-tight text-[#ECEEF7]" id="gama-mm4ukddi-18">
+              Our&nbsp;<span class="italic font-normal" id="gama-mm4ukddi-19" contenteditable="false">Product Solutions</span>
+            </h1>
+            <p class="text-base md:text-xl text-[#ECEEF7]/80 max-w-2xl leading-relaxed font-light reveal-delay-1 opacity-0 animate-reveal" id="gama-mm4ukddi-20">
+              Providing a complete range of mechanical components and heavy machinery. From the heart of the conveyor system to the crushing circuit, engineered for the harshest industrial environments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Conveyor Belting -->
+      <section class="py-24 bg-[#ECEEF7] text-[#334432]" id="belting">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-21">
+          <div class="mb-16 border-l-4 border-[#334432] pl-8" id="gama-mm4ukddi-22">
+            <h2 class="text-xs font-black uppercase tracking-[0.2em] text-[#334432]/40 mb-4" id="gama-mm4ukddi-23">01. Conveyor Belting Solutions</h2>
+            <p class="text-3xl font-light max-w-2xl" id="gama-mm4ukddi-24">High-performance belts designed for abrasion resistance, heat resistance, and heavy loads.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8" id="gama-mm4ukddi-25">
+            <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group" id="gama-mm4ukddi-26">
+               <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-27">Multi-ply Fabric (EP/NN/CC)</h4>
+               <p class="text-sm text-[#334432]/70 leading-relaxed mb-6" id="gama-mm4ukddi-28">Nylon (NN), Polyester (EP), and Cotton (CC) constructions with high impact resistance and tear strength.</p>
+               <span class="text-[10px] font-black uppercase text-[#334432]/40" id="gama-mm4ukddi-29">Cement • Ports • Timber</span>
+            </div>
+            <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group" id="gama-mm4ukddi-30">
+               <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-31">Steel Cord (ST Series)</h4>
+               <p class="text-sm text-[#334432]/70 leading-relaxed mb-6" id="gama-mm4ukddi-32">Designed for long-distance transportation. Low elongation with galvanized steel cords fully embedded. ST630 to ST7500.</p>
+               <span class="text-[10px] font-black uppercase text-[#334432]/40" id="gama-mm4ukddi-33">Mining • High Intensity</span>
+            </div>
+            <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 group" id="gama-mm4ukddi-34">
+               <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-35">Specialized Belts</h4>
+               <p class="text-sm text-[#334432]/70 leading-relaxed mb-6" id="gama-mm4ukddi-36">Corrugated sidewalls for 90° incline, Chevron patterns for loose materials, and Nitrile/NBR resistant covers.</p>
+               <span class="text-[10px] font-black uppercase text-[#334432]/40" id="gama-mm4ukddi-37">Steep Incline • Chemical</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Components -->
+      <section class="py-24 bg-[#334432] text-[#ECEEF7]" id="components">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-38">
+          <div class="text-center mb-20" id="gama-mm4ukddi-39">
+            <h2 class="text-3xl font-light mb-4" id="gama-mm4ukddi-40">Conveyor Components</h2>
+            <p class="text-[#ECEEF7]/60" id="gama-mm4ukddi-41">The critical hardware that keeps your system moving.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-px bg-[#ECEEF7]/10 border border-[#ECEEF7]/10" id="gama-mm4ukddi-42">
+            <div class="p-12 bg-[#334432] hover:bg-[#ECEEF7]/5 transition-all group" id="gama-mm4ukddi-43">
+              <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-44">Rollers &amp; Idlers</h4>
+              <p class="text-sm text-[#ECEEF7]/60 leading-relaxed" id="gama-mm4ukddi-45">Impact idlers with buffer ring design, self-aligning frames, and spiral rollers to prevent material buildup.</p>
+            </div>
+            <div class="p-12 bg-[#334432] hover:bg-[#ECEEF7]/5 transition-all group border-l border-r border-[#ECEEF7]/10" id="gama-mm4ukddi-46">
+              <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-47">Pulleys &amp; Drums</h4>
+              <p class="text-sm text-[#ECEEF7]/60 leading-relaxed" id="gama-mm4ukddi-48">Drive drums with herringbone rubber lagging and tail pulleys with internal bearing enlargement devices.</p>
+            </div>
+            <div class="p-12 bg-[#334432] hover:bg-[#ECEEF7]/5 transition-all group" id="gama-mm4ukddi-49">
+              <h4 class="font-black uppercase text-xs tracking-widest mb-6" id="gama-mm4ukddi-50">Belt Cleaners</h4>
+              <p class="text-sm text-[#ECEEF7]/60 leading-relaxed" id="gama-mm4ukddi-51">Polyurethane and alloy V-plough cleaners to protect belts and reduce carryback across the line.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Complete Systems -->
+      <section class="py-24 bg-[#ECEEF7] text-[#334432]" id="systems">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-52">
+          <div class="grid md:grid-cols-2 gap-16 items-center" id="gama-mm4ukddi-53">
+            <div class="space-y-8" id="gama-mm4ukddi-54">
+              <h2 class="text-4xl font-light" id="gama-mm4ukddi-55">Complete Conveyor Systems</h2>
+              <p class="text-[#334432]/70 leading-relaxed font-light" id="gama-mm4ukddi-56">Turnkey solutions for bulk material handling, custom-engineered to your site topography.</p>
+              <div class="space-y-6" id="gama-mm4ukddi-57">
+                <div class="border-b border-[#334432]/10 pb-4 group hover:translate-x-2 transition-transform cursor-pointer" id="gama-mm4ukddi-58">
+                  <h5 class="font-black uppercase text-[10px] mb-2" id="gama-mm4ukddi-59">Stationary (TD75 &amp; DTII)</h5>
+                  <p class="text-sm" id="gama-mm4ukddi-60">Universal fixed conveyors for horizontal/inclined bulk density handling.</p>
+                </div>
+                <div class="border-b border-[#334432]/10 pb-4 group hover:translate-x-2 transition-transform cursor-pointer" id="gama-mm4ukddi-61">
+                  <h5 class="font-black uppercase text-[10px] mb-2" id="gama-mm4ukddi-62">Mobile (MSC Series)</h5>
+                  <p class="text-sm" id="gama-mm4ukddi-63">Hydraulic height adjustment and crawler tracks for on-site mobility.</p>
+                </div>
+                <div class="group hover:translate-x-2 transition-transform cursor-pointer" id="gama-mm4ukddi-64">
+                  <h5 class="font-black uppercase text-[10px] mb-2" id="gama-mm4ukddi-65">Port &amp; Ship Loading</h5>
+                  <p class="text-sm" id="gama-mm4ukddi-66">Barge loaders with telescopic and vertically adjustable booms.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative" id="gama-mm4ukddi-67">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;q=80&amp;w=1920" alt="Industrial System" class="rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.03]" id="gama-mm4ukddi-68">
+              <div class="absolute -bottom-6 -right-6 glass p-8 rounded-xl text-[#ECEEF7] hidden md:block" id="gama-mm4ukddi-69">
+                <p class="text-xs font-black uppercase tracking-widest" id="gama-mm4ukddi-70">Capacity</p>
+                <p class="text-2xl font-light" id="gama-mm4ukddi-71">0.5–2.5t/m³</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Crushing & Screening -->
+      <section class="py-24 bg-[#334432] text-[#ECEEF7]" id="gama-mm4ukddi-72">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-73">
+          <div class="text-center max-w-3xl mx-auto mb-20" id="gama-mm4ukddi-74">
+            <h2 class="text-3xl font-light mb-6" id="gama-mm4ukddi-75">Crushing &amp; Screening Machinery</h2>
+            <p class="text-[#ECEEF7]/60 leading-relaxed font-light" id="gama-mm4ukddi-76">High-efficiency equipment for aggregate and mineral processing, designed for superior fatigue resistance.</p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-10" id="gama-mm4ukddi-77">
+            <div class="glass p-10 rounded-2xl hover:bg-[#ECEEF7]/10 transition-all" id="gama-mm4ukddi-78">
+              <div class="flex justify-between items-start mb-6" id="gama-mm4ukddi-79">
+                <h4 class="text-2xl font-light" id="gama-mm4ukddi-80">HV Jaw Crushers</h4>
+                <span class="text-[10px] font-black border border-[#ECEEF7]/20 px-2 py-1" id="gama-mm4ukddi-81">Modular Frame</span>
+              </div>
+              <p class="text-sm text-[#ECEEF7]/70 leading-relaxed" id="gama-mm4ukddi-82">Non-welded design for fatigue resistance. Optimized for hard rock crushing with easy wedge-type discharge adjustment.</p>
+            </div>
+            <div class="glass p-10 rounded-2xl hover:bg-[#ECEEF7]/10 transition-all" id="gama-mm4ukddi-83">
+              <div class="flex justify-between items-start mb-6" id="gama-mm4ukddi-84">
+                <h4 class="text-2xl font-light" id="gama-mm4ukddi-85">Cone Crushers (HD/HPT)</h4>
+                <span class="text-[10px] font-black border border-[#ECEEF7]/20 px-2 py-1" id="gama-mm4ukddi-86">Hydraulic Release</span>
+              </div>
+              <p class="text-sm text-[#ECEEF7]/70 leading-relaxed" id="gama-mm4ukddi-87">"More breaking, less grinding" for better cubicity. Hydraulic clearing system reduces operational downtime.</p>
+            </div>
+            <div class="glass p-10 rounded-2xl hover:bg-[#ECEEF7]/10 transition-all" id="gama-mm4ukddi-88">
+              <div class="flex justify-between items-start mb-6" id="gama-mm4ukddi-89">
+                <h4 class="text-2xl font-light" id="gama-mm4ukddi-90">Vibrating Screens</h4>
+                <span class="text-[10px] font-black border border-[#ECEEF7]/20 px-2 py-1" id="gama-mm4ukddi-91">YAQ-H Series</span>
+              </div>
+              <p class="text-sm text-[#ECEEF7]/70 leading-relaxed" id="gama-mm4ukddi-92">Laser-cut side plates without welding seams to prevent stress cracking. Heavy-duty dual-shaft circular motion.</p>
+            </div>
+            <div class="glass p-10 rounded-2xl hover:bg-[#ECEEF7]/10 transition-all" id="gama-mm4ukddi-93">
+              <div class="flex justify-between items-start mb-6" id="gama-mm4ukddi-94">
+                <h4 class="text-2xl font-light" id="gama-mm4ukddi-95">Washing &amp; Feeding</h4>
+                <span class="text-[10px] font-black border border-[#ECEEF7]/20 px-2 py-1" id="gama-mm4ukddi-96">LX/ZW Series</span>
+              </div>
+              <p class="text-sm text-[#ECEEF7]/70 leading-relaxed" id="gama-mm4ukddi-97">Helical design sand washers for stone powder dewatering and vibrating feeders for consistent flow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Valves & Bearings -->
+      <section class="py-24 bg-[#ECEEF7] text-[#334432]" id="gama-mm4ukddi-98">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-99">
+          <div class="flex flex-col md:flex-row gap-16" id="gama-mm4ukddi-100">
+            <div class="md:w-1/3 border-l-4 border-[#334432] pl-8" id="gama-mm4ukddi-101">
+              <h2 class="text-4xl font-light mb-6" id="gama-mm4ukddi-102">Valves &amp; Bearings</h2>
+              <p class="text-sm font-light text-[#334432]/70" id="gama-mm4ukddi-103">The foundation of our technical expertise. Available with manual, electric, or pneumatic actuation.</p>
+            </div>
+            <div class="md:w-2/3 grid md:grid-cols-2 gap-8" id="gama-mm4ukddi-104">
+              <div class="group" id="gama-mm4ukddi-105">
+                <h5 class="font-black uppercase text-xs tracking-widest mb-4" id="gama-mm4ukddi-106">Industrial Portfolio</h5>
+                <ul class="text-sm space-y-2 opacity-80" id="gama-mm4ukddi-107">
+                  <li id="gama-mm4ukddi-108">Ball &amp; Gate Valves</li>
+                  <li id="gama-mm4ukddi-109">Globe &amp; Check Valves</li>
+                  <li id="gama-mm4ukddi-110">Butterfly Control</li>
+                  <li id="gama-mm4ukddi-111">Process Actuation</li>
+                </ul>
+              </div>
+              <div class="group" id="gama-mm4ukddi-112">
+                <h5 class="font-black uppercase text-xs tracking-widest mb-4" id="gama-mm4ukddi-113">Heavy-Duty Units</h5>
+                <ul class="text-sm space-y-2 opacity-80" id="gama-mm4ukddi-114">
+                  <li id="gama-mm4ukddi-115">Motor Bearings</li>
+                  <li id="gama-mm4ukddi-116">Pump Bearings</li>
+                  <li id="gama-mm4ukddi-117">Crusher Bearings</li>
+                  <li id="gama-mm4ukddi-118">Sourcing &amp; QC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Wear Parts -->
+      <section class="py-24 bg-[#334432]" id="gama-mm4ukddi-119">
+        <div class="container mx-auto px-6" id="gama-mm4ukddi-120">
+          <div class="bg-[#ECEEF7] p-12 md:p-20 rounded-3xl text-[#334432] flex flex-col md:flex-row justify-between items-center gap-12 group" id="gama-mm4ukddi-121">
+            <div class="max-w-xl" id="gama-mm4ukddi-122">
+              <h2 class="text-3xl font-light mb-6" id="gama-mm4ukddi-123">Wear Parts &amp; Spares</h2>
+              <p class="text-sm font-light opacity-80 leading-relaxed" id="gama-mm4ukddi-124">Reduce downtime with high-quality OEM-equivalent replacement parts. We provide custom fabrication and reverse-engineering for legacy equipment.</p>
+              <div class="flex flex-wrap gap-4 mt-8" id="gama-mm4ukddi-125">
+                <span class="bg-[#334432]/5 px-4 py-2 rounded-full text-[10px] font-black uppercase" id="gama-mm4ukddi-126">Manganese Liners</span>
+                <span class="bg-[#334432]/5 px-4 py-2 rounded-full text-[10px] font-black uppercase" id="gama-mm4ukddi-127">Polyurethane Mesh</span>
+                <span class="bg-[#334432]/5 px-4 py-2 rounded-full text-[10px] font-black uppercase" id="gama-mm4ukddi-128">Woven Steel</span>
+              </div>
+            </div>
+            <div class="w-full md:w-auto" id="gama-mm4ukddi-129">
+              <a href="#contact" class="inline-block px-10 py-5 bg-[#334432] text-[#ECEEF7] font-black uppercase tracking-widest text-[10px] rounded-full hover:scale-105 transition-all shadow-xl active:scale-95 whitespace-nowrap" id="gama-mm4ukddi-130">Request Data Sheets</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="bg-[#334432] py-32 text-[#ECEEF7] relative overflow-hidden" id="cta">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none" id="gama-mm4ukddi-131">
+          <img src="https://images.unsplash.com/photo-1516937622178-7455838203b8?auto=format&amp;fit=crop&amp;q=80&amp;w=2070" class="w-full h-full object-cover" alt="Facility" id="gama-mm4ukddi-132">
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center" id="gama-mm4ukddi-133">
+          <h2 class="text-4xl md:text-7xl font-light mb-12" id="gama-mm4ukddi-134">
+            Need technical <br id="gama-mm4ukddi-135"><span class="italic font-normal" id="gama-mm4ukddi-136">specifications?</span>
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6" id="gama-mm4ukddi-137">
+             <a href="#" class="px-10 py-5 bg-[#ECEEF7] text-[#334432] font-black uppercase tracking-widest text-xs rounded-full hover:scale-105 transition-all shadow-xl active:scale-95" id="gama-mm4ukddi-138">Request a Quote</a>
+             <a href="#" class="px-10 py-5 border border-[#ECEEF7]/30 text-[#ECEEF7] font-black uppercase tracking-widest text-xs rounded-full hover:bg-white/10 transition-all" id="gama-mm4ukddi-139">Contact Sales</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#ECEEF7] text-[#334432] pt-24 pb-12" id="gama-mlzl2fui-98">
+      <div class="container mx-auto px-6" id="gama-mm4ukddi-140">
+        <div class="grid md:grid-cols-12 gap-12 mb-20" id="gama-mm4ukddi-141">
+          <div class="md:col-span-5" id="gama-mm4ukddi-142">
+            <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1771584838/bearings-logo_zqwh2x.png" alt="Global Valves and Bearings Solutions Logo" class="h-12 w-auto mb-8 object-contain" id="gama-mm4ukddi-143">
+            <p class="text-sm text-[#334432]/70 leading-relaxed max-w-sm font-normal" id="gama-mm4ukddi-144">Global Valves and Bearings Solutions is a premier supplier of industrial mechanical components. From component supply to full production line design, we support critical operations worldwide.</p>
+          </div>
+          <div class="md:col-span-3 col-span-6" id="gama-mm4ukddi-145">
+            <h5 class="uppercase text-[10px] font-black tracking-[0.2em] text-[#334432]/40 mb-6" id="gama-mm4ukddi-146">Solutions</h5>
+            <ul class="space-y-4 text-sm font-bold" id="gama-mm4ukddi-147">
+              <li id="gama-mm4ukddi-148"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-149">Conveyor Systems</a></li>
+              <li id="gama-mm4ukddi-150"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-151">Heavy Machinery</a></li>
+              <li id="gama-mm4ukddi-152"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-153">Valves &amp; Bearings</a></li>
+              <li id="gama-mm4ukddi-154"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-155">Engineering Services</a></li>
+            </ul>
+          </div>
+          <div class="md:col-span-3 col-span-6" id="gama-mm4ukddi-156">
+            <h5 class="uppercase text-[10px] font-black tracking-[0.2em] text-[#334432]/40 mb-6" id="gama-mm4ukddi-157">Company</h5>
+            <ul class="space-y-4 text-sm font-bold" id="gama-mm4ukddi-158">
+              <li id="gama-mm4ukddi-159"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-160">About Us</a></li>
+              <li id="gama-mm4ukddi-161"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-162">Industries</a></li>
+              <li id="gama-mm4ukddi-163"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-164">Logistics</a></li>
+              <li id="gama-mm4ukddi-165"><a href="#" class="hover:opacity-60 transition-opacity" id="gama-mm4ukddi-166">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-[#334432]/10 pt-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6" id="gama-mm4ukddi-167">
+          <div class="text-[10px] uppercase tracking-widest text-[#334432]/40 font-black" id="gama-mm4ukddi-168">© 2026 Global Valves and Bearings Solutions</div>
+          <div class="flex space-x-8 text-[10px] uppercase tracking-widest text-[#334432]/40 font-black" id="gama-mm4ukddi-169">
+            <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4ukddi-170">Privacy</a>
+            <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4ukddi-171">Technical Standards</a>
+            <a href="#" class="hover:text-[#334432] transition-colors" id="gama-mm4ukddi-172">Global Sourcing</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true
+    });
+    
+    lenis.on('scroll', ScrollTrigger.update);
+    
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    
+    gsap.ticker.lagSmoothing(0);
+
+    gsap.utils.toArray('section').forEach((section, i) => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        }
+      });
+    });
+  </script>
+
+</body></html>
